@@ -1,18 +1,18 @@
 //naive solution
-const subArrayMaxSum = (arr, n) => {
-	if (n > arr.length) return null;
-	let max = -Infinity;
-	for (var i = 0; i < arr.length - n + 1; i++ ) {
-		let temp = 0;
-		for (var j = 0; j < n; j++) {
-			temp += arr[i + j];
-		}
-		if (temp > max) {
-			max = temp;
-		}
-		console.log(temp, max);
-	} return max;
-}
+// const subArrayMaxSum = (arr, n) => {
+// 	if (n > arr.length) return null;
+// 	let max = -Infinity;
+// 	for (var i = 0; i < arr.length - n + 1; i++ ) {
+// 		let temp = 0;
+// 		for (var j = 0; j < n; j++) {
+// 			temp += arr[i + j];
+// 		}
+// 		if (temp > max) {
+// 			max = temp;
+// 		}
+// 		console.log(temp, max);
+// 	} return max;
+// }
 
 // linear complexitity
 const subArrayMaxSum = (arr, n) => {
